@@ -23,8 +23,8 @@ class Book extends Component {
             div className = "book-cover"
             style = {
                 {
-                    width: 130,
-                    height: 200,
+                    width: 125,
+                    height: 160,
                     backgroundImage: `url("${backGroundImage}")`
                 }
             }
