@@ -1,6 +1,6 @@
 # MyReads Project
 
-This is  myreads web project for Udacity FEWD Nanodegree. The bookshelf application allows you to select and classify the books you have read, are currently reading or want to read.
+This is  myreads web project for [Udacity FEWD Nanodegree.](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001) The bookshelf application allows you to select and classify the books you have read, are currently reading or want to read.
 
 ## To run locally:
 
