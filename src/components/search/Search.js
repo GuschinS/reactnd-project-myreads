@@ -11,6 +11,7 @@ import './search.css'
 //class of react component for book search
 
 class SearchBooks extends Component {
+
     state = {
         query: '',
         resultNum: 20,
@@ -35,10 +36,16 @@ class SearchBooks extends Component {
             BooksAPI.search(query, this.resultNum).then(books => {
                 if (Array.isArray(books)) {
                     this.checkShelvesOfBooks(books, this.props.books);
+                } else {
+//the search is updated. If there is no match, the list of books is empty.
+                    this.setState({
+                        books: []
+                    });
                 }
             });
         }
     };
+
     //check and put the book in the right place
     checkShelvesOfBooks = (searchBooks, currentBooks) => {
         const shelvedBooks = searchBooks.map(searchBook => {
@@ -106,4 +113,5 @@ class SearchBooks extends Component {
         );
     }
 }
+
 export default SearchBooks;
